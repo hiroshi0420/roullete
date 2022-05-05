@@ -1,0 +1,156 @@
+.header{
+    font-weight: bold;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    background-color: darkgray;
+    top: 0;
+    left: 0;
+    height: 30px;
+    position: absolute;
+    padding-top: 5px;
+}
+
+.contentUsers{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.elementUserCls{
+    float: left;
+    width: 20%;
+}
+
+.elementUserClsTittle{
+    float: left;
+    width: 20%;
+    font-weight: bold;
+
+}
+
+
+.elementColorBet{
+    background-color: white;
+    width: 15px;
+    height: 15px;
+    margin-left: 20px;
+    border: 1px solid;
+}
+
+.elementColorBetRed{
+    background-color: red;
+    width: 15px;
+    height: 15px;
+    margin-left: 20px;
+    border: 1px solid;
+}
+
+.elementColorBetBlack{
+    background-color: black;
+    width: 15px;
+    height: 15px;
+    margin-left: 20px;
+    border: 1px solid;
+}
+
+.elementColorBetGreen{
+    background-color: green;
+    width: 15px;
+    height: 15px;
+    margin-left: 20px;
+    border: 1px solid;
+}
+
+.gameTable{
+    margin-top: 50px;
+    width: 100%;
+    height: 70px;
+    background-color: aliceblue;
+}
+
+.tableGame{
+    background-color: white;
+    /*background-image: url("../images/ruleta.gif");*/
+    width: 60px;
+    height: 60px;
+    margin-left: 20px;
+    border: 1px solid;
+    border-radius: 40px;
+    position: absolute;
+    /*background-color: aquamarine;*/
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.tableGameRoulette{
+    background-color: white;
+    background-image: url("../images/ruleta.gif");
+    width: 60px;
+    height: 60px;
+    margin-left: 20px;
+    border: 1px solid;
+    border-radius: 40px;
+    position: absolute;
+    /*background-color: aquamarine;*/
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.tableGameBlack{
+    background-color: black;
+    width: 60px;
+    height: 60px;
+    margin-left: 20px;
+    border: 1px solid;
+    border-radius: 40px;
+    position: absolute;
+    /*background-color: aquamarine;*/
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.tableGameGreen{
+    background-color: green;
+    width: 60px;
+    height: 60px;
+    margin-left: 20px;
+    border: 1px solid;
+    border-radius: 40px;
+    position: absolute;
+    /*background-color: aquamarine;*/
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.tableGameRed{
+    background-color: red;
+    width: 60px;
+    height: 60px;
+    margin-left: 20px;
+    border: 1px solid;
+    border-radius: 40px;
+    position: absolute;
+    /*background-color: aquamarine;*/
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.gameContainer{
+    width: 100%;
+}
+
+.winRoulette{
+    border: 1px solid green;
+}
+
+.loseRoulette{
+    border: 1px solid red;
+}

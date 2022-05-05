@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sistema Monitoreo Casino</title>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="css/styles.css">
+        <link href="jquery-ui-1.13.1/jquery-ui.css" rel="stylesheet">
+
+        <script src="js/main.js"></script>
+        <script src="js/probabilidadColores.js"></script>
+
+        <script src="jquery-ui-1.13.1/external/jquery/jquery.js"></script>
+        <script src="jquery-ui-1.13.1/jquery-ui.js"></script>
+
+    </head>
+
+    <body>
+
+        <div class="header" >
+            <span>Sistema Monitoreo Casino</span>
+        </div>
+
+        <div class="gameTable" id="gameTable">
+            <div class="gameContainer"><div class="tableGame" id="tableGame"></div></div>
+            <button class="ui-button ui-widget ui-corner-all" onclick="addUser()" >Agregar Usuario</button>
+            <button class="ui-button ui-widget ui-corner-all" onclick="buildBets()" >Hacer Apuestas</button>
+            <button class="ui-button ui-widget ui-corner-all" onclick="startGame()">Jugar</button>
+            <button class="ui-button ui-widget ui-corner-all" onclick="restartGame()" >Reiniciar Juego</button>
+
+        </div>
+
+        <div class="contentUsers">
+            <div class="userCls">
+                <div class="elementUserClsTittle" >Acci&oacute;n</div>
+                <div class="elementUserClsTittle" >Nombre Usuario</div>
+                <div class="elementUserClsTittle" >Saldo Disponible</div>
+                <div class="elementUserClsTittle" >Saldo Apostado</div>
+                <div class="elementUserClsTittle" >Color Apostado</div>
+            </div>
+        </div>
+
+        <div class="contentUsers" id="contentUsers">
+
+            <!-- <div class="userCls" id="user_xx1">
+<div class="elementUserCls" id="actionUser">Editar - Borrar</div>
+<div class="elementUserCls" id="nameUser">Usuario xx1</div>
+<div class="elementUserCls" id="moneyFree">$8000</div>
+<div class="elementUserCls" id="moneyTobet"><input type="text" value="500" disabled/></div>
+<div class="elementUserCls" id="colorBet"><div class="elementColorBet"></div></div>
+</div>
+<div class="userCls" id="user_xx1">
+<div class="elementUserCls" id="actionUser">Editar - Borrar</div>
+<div class="elementUserCls" id="nameUser">Usuario xx2</div>
+<div class="elementUserCls" id="moneyFree">$5000</div>
+<div class="elementUserCls" id="moneyTobet"><input type="text" value="900" disabled/></div>
+<div class="elementUserCls" id="colorBet"><div class="elementColorBet"></div></div>
+</div>  
+<div class="userCls" id="user_xx1">
+<div class="elementUserCls" id="actionUser">Editar - Borrar</div>
+<div class="elementUserCls" id="nameUser">Usuario xx3</div>
+<div class="elementUserCls" id="moneyFree">$15000</div>
+<div class="elementUserCls" id="moneyTobet"><input type="text" value="1900" disabled/></div>
+<div class="elementUserCls" id="colorBet"><div class="elementColorBet"></div></div>
+</div>  -->
+        </div>
+
+
+        <script>
+            allStorage();
+
+            setTimeout(function(){
+                buildBets();
+                startGame();
+                //location.reload();
+
+            },180000);
+
+            setTimeout(function(){
+                location.reload();
+                console.log('reload')
+            },185000);
+
+        </script>
+
+
+    </body>
+</html>
